@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
+	<Property Name="varPersistentID:{616D514A-55E8-4174-942F-2EEEF718685D}" Type="Ref">/NI-myRIO/Angle.lvlib/Angle</Property>
 	<Property Name="varPersistentID:{97CEE006-9AA4-44BF-BEF4-D70C09816880}" Type="Ref">/NI-myRIO/axis.lvlib/appended array</Property>
 	<Property Name="varPersistentID:{D4F6C32A-9D40-42D3-8A3C-F65F08A47BE9}" Type="Ref">/NI-myRIO/TimeWhenClicked.lvlib/seconds since 1Jan1904</Property>
 	<Property Name="varPersistentID:{D8DC417F-F678-4FFA-9188-7560C8F20D11}" Type="Ref">/NI-myRIO/bool_bouton.lvlib/Variable</Property>
@@ -13,21 +14,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="testini.vi" Type="VI" URL="../testini.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-			</Item>
-		</Item>
+		<Item Name="IHM.vi" Type="VI" URL="../IHM.vi"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO" Type="RT myRIO">
@@ -109,6 +97,8 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="acc.vi" Type="VI" URL="../acc.vi"/>
+		<Item Name="Angle.lvlib" Type="Library" URL="../Angle.lvlib"/>
+		<Item Name="AngleSteam.vi" Type="VI" URL="../AngleSteam.vi"/>
 		<Item Name="axis.lvlib" Type="Library" URL="../axis.lvlib"/>
 		<Item Name="bool_bouton.lvlib" Type="Library" URL="../bool_bouton.lvlib"/>
 		<Item Name="CalculAngle.vi" Type="VI" URL="../CalculAngle.vi"/>

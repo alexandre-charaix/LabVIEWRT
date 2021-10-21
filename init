@@ -1,0 +1,6 @@
+[SETTINGS]
+DefAng = 0,000000
+--Angle = -10,000000
+-Angle = -5,000000
++Angle = 5,000000
+++Angle = 10,000000
